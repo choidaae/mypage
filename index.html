@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="000000 최다애의 독서 링크" />
+    <meta property="og:description" content="최다애의 독서링크입니다" />
+    <meta property="og:image" content="profile.png" />
+    <title>000000 최다애의 독서 링크</title>
+    <style>
+        /* 10번 글꼴 꾸미기 */
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            font-family: "Pretendard",serif;
+        }
+
+        /* 1번 배경색 설정 */
+        body {
+            background-color: rgb(245, 180, 242);
+        }
+        /* 3번 프로필 명찰 사이즈, 이미지, 테두리 꾸미기 */
+        .profile {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+
+            border-radius: 100%;
+            border: 3px solid rgb(255, 220, 21);
+
+            background-image: url(profile.png);
+            background-position: center;
+            background-size: cover;
+        }
+        /* 5번 이름과 설명 꾸미기 */
+        .main {
+            color: navy;
+            font-size: 20x;
+
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .sub {
+            color: navy;
+            font-size: 14px;
+
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        /* 7번 박스 가운데로 옮기기:배경색 지정green, 크기조정width, 가운데로밀기margin, 내용 가운데정렬 display flex, 이후 배경색 제거 */
+        .wrap {
+            width: 300px;
+            margin: 30px auto 0px auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 9번 wrap 박스 안의 a태그 버튼 꾸미기 */
+        .wrap > a {
+            width: 300px;
+            height: 50px;
+            /* 버튼 배경 색과 둥글기 */
+            background-color: white;
+            border-radius: 8px;
+            /* 버튼간격 띄우기 */
+            margin-bottom: 10px;
+
+            /* 글자의 크기와 굵기, 색깔(배경색깔 복사함) */
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(166, 81, 223);
+
+            /* 가운데 정렬(위에서 복사함) */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            /* 밑줄은 a태그에 자동으로 있는거라 아래와 같이 없앰 */
+            text-decoration: none;
+            /* 앞의 3px 3px는 오른쪽 밑으로 얼마나 그림자 지게 할거냐, 5px는 꼬리의 길이, 0px는 꼬리의 선명도 */
+            box-shadow: 3px 3px 5px 0px black;
+        }
+
+        /* 11번 버튼에 마우슬 올렸을 때 색이 변하게 하기 추가로 color로 글자색, font-size로 글자크기 조정도 가능 */
+        .wrap > a:hover {
+            background-color: #d2d2d2;
+            color: black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- 6번 wrap으로 박스 지정 -->
+    <div class="wrap">
+        <!-- 2번 프로필 명찰 지정 -->
+        <div class="profile"></div>
+        <!-- 4번 이름과 설명, 명찰 지정 -->
+        <h1 class="main">최다애</h1>
+        <p class="sub">깜찍한 최다애의 독서 프로필</p>
+        <!-- 8번 a태그 붙여넣기 -->
+        <a target="_blank" href="./myjob.html">내 꿈을 소개할게</a>
+        <a target="_blank" href="./mybook.html">내 책을 소개할게</a>
+        <a target="_blank" href="morebook.png">이것도 한번 읽어봐</a>
+        <a target="_blank" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=273248361">온라인서점링크</a>
+    </div>
+</body>
+</html>
