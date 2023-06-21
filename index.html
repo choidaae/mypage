@@ -86,7 +86,7 @@
         }
 
         /* 11번 버튼에 마우슬 올렸을 때 색이 변하게 하기 추가로 color로 글자색, font-size로 글자크기 조정도 가능 */
-        .wrap > a:hover {
+        .wrap > button:hover {
             background-color: #d2d2d2;
             color: black;
         }
@@ -105,10 +105,10 @@
         <h1 class="main">최다애</h1>
         <p class="sub">깜찍한 최다애의 독서 프로필</p>
         <!-- 8번 a태그 붙여넣기 -->
-        <a target="_blank" href="./myjob.html">내 꿈을 소개할게</a>
-        <a target="_blank" href="./mybook.html">내 책을 소개할게</a>
-        <a target="_blank" href="morebook.png">이것도 한번 읽어봐</a>
-        <a target="_blank" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=273248361">온라인서점링크</a>
+        <button onclick="window.open('./myjob.html', '_blank')">나의 꿈 소개</button>
+        <button onclick="window.open('./mybook.html', '_blank')">나의 책 소개</button>
+        <button onclick="window.open('morebook.png', '_blank')">00관련 책 소개</button>
+        <button onclick="window.open('https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=273248361')">온라인 서점 링크</button>
     </div>
 </body>
 </html>
