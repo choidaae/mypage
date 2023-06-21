@@ -62,28 +62,20 @@
         .wrap>button {
             width: 300px;
             height: 50px;
-            /* 버튼 배경 색과 둥글기 */
+            /* 버튼 배경 색, 버튼 테두리, 둥글기 */
             background-color: white;
+            border: none;
             border-radius: 8px;
             /* 버튼간격 띄우기 */
-            margin-bottom: 10px;
-
-            /* 글자의 크기와 굵기, 색깔(배경색깔 복사함) */
-            font-size: 14px;
+            margin-bottom: 20px;
+            /* 글자의 크기와 굵기, 색깔*/
+            font-size: 15px;
             font-weight: bold;
-            color: olivedrab;
-
-            /* 가운데 정렬(위에서 복사함) */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            /* 밑줄은 a태그에 자동으로 있는거라 아래와 같이 없앰 */
-            text-decoration: none;
+            color: olive;
             /* 앞의 3px 3px는 오른쪽 밑으로 얼마나 그림자 지게 할거냐, 5px는 꼬리의 길이, 0px는 꼬리의 선명도 */
             box-shadow: 3px 3px 5px 0px black;
         }
+                
 
         /* 11번 버튼에 마우슬 올렸을 때 색이 변하게 하기 추가로 color로 글자색, font-size로 글자크기 조정도 가능 */
         .wrap>button:hover {
